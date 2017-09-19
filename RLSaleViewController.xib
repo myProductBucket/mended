@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RLSaleViewController">
+            <connections>
+                <outlet property="addressDetailsLabel" destination="d0t-be-7Wl" id="ch1-0A-u9A"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJ4-QW-P3U" userLabel="Container View">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i0j-VN-GhQ" userLabel="Extra Information Container">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your shipping label has been sent to your email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="2gE-5R-8wO">
+                                    <rect key="frame" x="15" y="73" width="570" height="19"/>
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.82352941176470584" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="2gE-5R-8wO" secondAttribute="trailing" constant="15" id="LnI-fk-VSc"/>
+                                <constraint firstAttribute="centerX" secondItem="2gE-5R-8wO" secondAttribute="centerX" id="Row-0b-CnM"/>
+                                <constraint firstAttribute="height" constant="100" id="Zgy-bT-o94"/>
+                                <constraint firstAttribute="centerY" secondItem="2gE-5R-8wO" secondAttribute="centerY" id="nEr-ON-1L2"/>
+                                <constraint firstItem="2gE-5R-8wO" firstAttribute="leading" secondItem="i0j-VN-GhQ" secondAttribute="leading" constant="15" id="ryq-5i-MaT"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Row-0b-CnM"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ums-eq-Dhm" userLabel="Shipping Address Container">
+                            <rect key="frame" x="0.0" y="100" width="600" height="500"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shipping Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBM-BP-Mqo" userLabel="Shipping Address">
+                                    <rect key="frame" x="20" y="15" width="565" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="D6E-ve-7Vx"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                    <color key="textColor" red="0.53725490200000003" green="0.53725490200000003" blue="0.53725490200000003" alpha="1" colorSpace="deviceRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Address details" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="d0t-be-7Wl">
+                                    <rect key="frame" x="20" y="51" width="570" height="19"/>
+                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="d0t-be-7Wl" secondAttribute="trailing" constant="15" id="67d-MO-lbv"/>
+                                <constraint firstItem="d0t-be-7Wl" firstAttribute="top" secondItem="FBM-BP-Mqo" secondAttribute="bottom" constant="15" id="G4d-Uj-ley"/>
+                                <constraint firstAttribute="trailing" secondItem="FBM-BP-Mqo" secondAttribute="trailing" constant="15" id="MuY-mC-5ih"/>
+                                <constraint firstItem="FBM-BP-Mqo" firstAttribute="leading" secondItem="Ums-eq-Dhm" secondAttribute="leading" constant="20" id="U5V-CV-H5i"/>
+                                <constraint firstItem="d0t-be-7Wl" firstAttribute="leading" secondItem="Ums-eq-Dhm" secondAttribute="leading" constant="15" id="Vzz-HL-kNe"/>
+                                <constraint firstItem="FBM-BP-Mqo" firstAttribute="top" secondItem="Ums-eq-Dhm" secondAttribute="top" constant="15" id="rlS-9s-i7G"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Ums-eq-Dhm" firstAttribute="leading" secondItem="RJ4-QW-P3U" secondAttribute="leading" id="6Tw-pE-kIg"/>
+                        <constraint firstItem="i0j-VN-GhQ" firstAttribute="top" secondItem="RJ4-QW-P3U" secondAttribute="top" id="S2f-7o-LFp"/>
+                        <constraint firstAttribute="bottom" secondItem="Ums-eq-Dhm" secondAttribute="bottom" id="aaW-Ih-LGe"/>
+                        <constraint firstAttribute="trailing" secondItem="Ums-eq-Dhm" secondAttribute="trailing" id="iE7-gn-6Iy"/>
+                        <constraint firstAttribute="trailing" secondItem="i0j-VN-GhQ" secondAttribute="trailing" id="pvN-QM-EDE"/>
+                        <constraint firstItem="i0j-VN-GhQ" firstAttribute="leading" secondItem="RJ4-QW-P3U" secondAttribute="leading" id="uQT-dT-hKO"/>
+                        <constraint firstItem="i0j-VN-GhQ" firstAttribute="bottom" secondItem="Ums-eq-Dhm" secondAttribute="top" id="xxv-gZ-nUu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="RJ4-QW-P3U" secondAttribute="bottom" id="5HB-WD-mQA"/>
+                <constraint firstItem="RJ4-QW-P3U" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BVJ-QQ-n0s"/>
+                <constraint firstItem="RJ4-QW-P3U" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nR2-UD-sdl"/>
+                <constraint firstAttribute="trailing" secondItem="RJ4-QW-P3U" secondAttribute="trailing" id="t58-aH-Y41"/>
+            </constraints>
+            <point key="canvasLocation" x="92" y="154"/>
+        </view>
+    </objects>
+</document>

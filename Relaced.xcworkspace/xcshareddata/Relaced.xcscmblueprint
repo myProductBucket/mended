@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C049D67E5AE7E1578E50A9CE60CF3CD20E581D7D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C049D67E5AE7E1578E50A9CE60CF3CD20E581D7D" : 0,
+    "45C53200-FA1D-4E3E-9537-34BFF6B04D13" : 0,
+    "50919AD79AA969DA849F68A8A544749627B306C4" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "880E7C2F-D8DA-4614-AFFF-6C94170F1169",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C049D67E5AE7E1578E50A9CE60CF3CD20E581D7D" : "Relaced-DevMaster",
+    "45C53200-FA1D-4E3E-9537-34BFF6B04D13" : "Relaced copy 2",
+    "50919AD79AA969DA849F68A8A544749627B306C4" : "Relaced%20copy%202"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Relaced",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Relaced.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zperrault\/Relaced.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "45C53200-FA1D-4E3E-9537-34BFF6B04D13"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zperrault\/Relaced.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "50919AD79AA969DA849F68A8A544749627B306C4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/bmadueme\/relaced.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C049D67E5AE7E1578E50A9CE60CF3CD20E581D7D"
+    }
+  ]
+}

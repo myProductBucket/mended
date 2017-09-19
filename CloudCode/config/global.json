@@ -1,0 +1,18 @@
+{
+    "applications": {
+        "Relaced": {
+            "applicationId": "vrSssiHqDW7af30kZpRn0qKzqkXWaGvjJilxsjCT", 
+            "masterKey": "IF1fA0W5F8ln1Bn1Dg438J1Mio8XI96SbG1s49vO"
+        }, 
+        "Relaced Dev": {
+            "applicationId": "eKct7UNWimlGuF9NJZnDJukcRwNvEQWbN3e5Z9Kr", 
+            "masterKey": "qoHqFQwe4gU7KwBcDPPRKxYn4NLYxbe27klnT7GQ"
+        },
+        "_default": {
+            "link": "Relaced Dev"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.4.0"
+    }
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RLCardSelectionViewController">
+            <connections>
+                <outlet property="addCardButton" destination="bML-3r-L4o" id="e9q-8H-3hg"/>
+                <outlet property="cardsTableView" destination="2vc-JQ-W3b" id="v9a-zL-7ao"/>
+                <outlet property="confirmPurchaseButton" destination="ghZ-aQ-ZtJ" id="kG3-J9-8nO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31v-U1-ihu" userLabel="Container View">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2vc-JQ-W3b">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="530"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="DsF-i4-AQP"/>
+                                <outlet property="delegate" destination="-1" id="6iL-o1-pz3"/>
+                            </connections>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3S-P3-Jwm" userLabel="Card Actions Container">
+                            <rect key="frame" x="0.0" y="530" width="600" height="70"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghZ-aQ-ZtJ">
+                                    <rect key="frame" x="15" y="10" width="570" height="50"/>
+                                    <color key="backgroundColor" red="0.68299521169999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="19"/>
+                                    <state key="normal" title="Confirm Purchase">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="confirmPurchaseButtonPressed:" destination="-1" eventType="touchUpInside" id="jgL-vW-xf2"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bML-3r-L4o">
+                                    <rect key="frame" x="15" y="10" width="570" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="19"/>
+                                    <state key="normal" title="Add Credit Card">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="addCardButtonPressed:" destination="-1" eventType="touchUpInside" id="5Gb-Zy-Cvc"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="bML-3r-L4o" secondAttribute="trailing" constant="15" id="96i-7g-Oo6"/>
+                                <constraint firstItem="bML-3r-L4o" firstAttribute="leading" secondItem="a3S-P3-Jwm" secondAttribute="leading" constant="15" id="aiS-y2-LKq"/>
+                                <constraint firstItem="bML-3r-L4o" firstAttribute="top" secondItem="a3S-P3-Jwm" secondAttribute="top" constant="10" id="bKU-Bk-S2F"/>
+                                <constraint firstItem="ghZ-aQ-ZtJ" firstAttribute="width" secondItem="bML-3r-L4o" secondAttribute="width" id="ezz-Ct-BIb"/>
+                                <constraint firstAttribute="bottom" secondItem="bML-3r-L4o" secondAttribute="bottom" constant="10" id="pOs-LM-c63"/>
+                                <constraint firstItem="ghZ-aQ-ZtJ" firstAttribute="centerY" secondItem="bML-3r-L4o" secondAttribute="centerY" id="qII-pX-2Ds"/>
+                                <constraint firstItem="ghZ-aQ-ZtJ" firstAttribute="height" secondItem="bML-3r-L4o" secondAttribute="height" id="qV5-jr-4qL"/>
+                                <constraint firstItem="ghZ-aQ-ZtJ" firstAttribute="centerX" secondItem="bML-3r-L4o" secondAttribute="centerX" id="t7M-Uu-R7O"/>
+                                <constraint firstAttribute="height" constant="70" id="uAS-yK-lP6"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="2vc-JQ-W3b" secondAttribute="trailing" id="0SI-2l-9SY"/>
+                        <constraint firstAttribute="bottom" secondItem="a3S-P3-Jwm" secondAttribute="bottom" id="B27-RO-C1X"/>
+                        <constraint firstItem="2vc-JQ-W3b" firstAttribute="leading" secondItem="31v-U1-ihu" secondAttribute="leading" id="N4Y-a0-qRW"/>
+                        <constraint firstItem="2vc-JQ-W3b" firstAttribute="top" secondItem="31v-U1-ihu" secondAttribute="top" id="f8D-MP-nFz"/>
+                        <constraint firstItem="a3S-P3-Jwm" firstAttribute="leading" secondItem="31v-U1-ihu" secondAttribute="leading" id="iMp-99-CeQ"/>
+                        <constraint firstAttribute="trailing" secondItem="a3S-P3-Jwm" secondAttribute="trailing" id="qqP-sv-ai6"/>
+                        <constraint firstItem="a3S-P3-Jwm" firstAttribute="top" secondItem="2vc-JQ-W3b" secondAttribute="bottom" id="t9V-xY-yeS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="31v-U1-ihu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nxZ-BY-A2G"/>
+                <constraint firstItem="31v-U1-ihu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qk9-Ob-LNt"/>
+                <constraint firstAttribute="trailing" secondItem="31v-U1-ihu" secondAttribute="trailing" id="xfB-sE-WtR"/>
+                <constraint firstAttribute="bottom" secondItem="31v-U1-ihu" secondAttribute="bottom" id="zvA-EV-NkM"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
